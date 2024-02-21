@@ -1,0 +1,45 @@
+.ProjectsCards {
+  margin-top: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(27, 93, 165);
+  text-decoration: bold;
+  text-align: center;
+}
+
+.projectCard {
+  display: inline-block;
+  width: calc(33.33% - 20px); /* Adjust the width based on the number of projects in a row */
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #007BFF;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: #0056b3;
+    }
+  }
+}
+
+.projectImage {
+  max-width: 100%;
+  max-height: 250px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
